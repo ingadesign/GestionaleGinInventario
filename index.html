@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inventario GiN APS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="brand-tag" id="brandTag">GiN·APS</span><h1>Inventario</h1></div>
+    <div class="who" id="who"></div>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist">
+    <button role="tab" data-v="beni" aria-selected="true">Beni</button>
+    <button role="tab" data-v="progetti" aria-selected="false">Progetti e fondi</button>
+    <button role="tab" data-v="etichette" aria-selected="false">Etichette</button>
+    <button role="tab" data-v="impostazioni" aria-selected="false">Impostazioni</button>
+  </nav>
+  <main id="main"></main>
+</div>
+<div id="layer"></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="config.js"></script>
+<script src="vendor/supabase.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="adapter.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
